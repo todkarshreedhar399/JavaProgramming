@@ -1,6 +1,5 @@
 
 public class EmployeeWage {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		   int isFullTime=1;
@@ -9,38 +8,34 @@ public class EmployeeWage {
 		   int wageperhour=20;
 		   int totalhours;
 		   int wage=0;
+		   int sumofsalary=0;
+		   for (int i=0; i < 20; i++)
+	       {
 	       double attendance=Math.floor(Math.random()*10)%3;
 	       int value = (int) attendance;
 	       switch(value)
 	       {
 	       case 1:
 	    	   totalhours=16;
-	        	System.out.println("Employee is Full Time");
 	        	wage=wageperhour*totalhours;
-	        	System.out.println("Full Time Day Wage:"+ wage);
+	        	sumofsalary=sumofsalary+wage;
 	        	break;
 	       case 2:
 	    	   totalhours=8;
-	        	System.out.println("Employee is Part Time");
 	        	wage=wageperhour*totalhours;
-	        	System.out.println("Part Time Day Wage:"+ wage);
+	        	sumofsalary=sumofsalary+wage;
 	        	break;
 	       case 0:
-	    	   System.out.println("Employee is Absent");
-	        	System.out.println("Day Wage:"+ wage);
+	    	    sumofsalary=sumofsalary+wage;
 	        	break;
 	       }
+	    }
+		   System.out.println("Total Monthly Salary (20 days) which include parttime,fulltime and absence is:" + sumofsalary);
 	}
 
+
 }
-/*
- * Output 1:
-Employee is Full Time
-Full Time Day Wage:320
-* Output 2:
-Employee is Absent
-Day Wage:0
-* Output 3:
-Employee is Part Time
-Part Time Day Wage:160
-*/
+/*Output:
+ o1:Total Monthly Salary (20 days) which include parttime,fulltime and absence is:5120
+ o2:Total Monthly Salary (20 days) which include parttime,fulltime and absence is:5280
+ */
