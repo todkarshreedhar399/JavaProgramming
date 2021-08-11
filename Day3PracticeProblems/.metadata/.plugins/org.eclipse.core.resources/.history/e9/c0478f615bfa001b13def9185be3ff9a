@@ -1,0 +1,23 @@
+import jdk.internal.misc.FileSystemOption;
+
+public class UC2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   int isPresent=1;
+		   int wageperhour=20;
+		   int totalhours=8;
+	        double attendance=Math.floor(Math.random()*10)%2;
+	        if (attendance == isPresent)
+	        {
+	        	System.out.println("Employee is Present");
+	        	System.out.println("Full Time Day Wage:"+ (wageperhour*totalhours));
+	        	
+	        }
+	        else 
+	        {
+	        	System.out.println("Employee is Absent");
+	        }
+	}
+
+}

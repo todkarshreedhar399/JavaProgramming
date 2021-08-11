@@ -1,0 +1,10 @@
+
+public class UC1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int ispresent=1;
+        double attendance=Math.floor(Math.random()*10)%2;
+	}
+
+}
