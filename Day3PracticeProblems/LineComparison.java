@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class LineComparison {
-	
+public class LineComparison
+{
+
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the co ordinates of the two points of 1st Line:");
@@ -36,33 +37,39 @@ public class LineComparison {
 			 {
 				 System.out.println("Equal Lines");
 			 }
+			 else if(length1>length2)
+			 {
+				 System.out.println("Line 1 length is greater.");
+			 }
 			 else
 			 {
-				 System.out.println("Not Equal Lines.");
+				 System.out.println("Line 2 length is greater.");
 			 }
 	}
-
+	
+	
 }
-/*Output
- Enter the co ordinates of the two points of 1st Line:
+
+/*Output:
+Enter the co ordinates of the two points of 1st Line:
 Enter the X co-ordinate of point A:
-1
+11
 Enter the Y co-ordinate of point A: 
-9
+2
 Enter the X co-ordinate of point B: 
-5
+1
 Enter the Y co-ordinate of point B: 
-8
-Length of a Line is:3.872983346207417
+9
+Length of a Line is:7.14142842854285
 Enter the co ordinates of the two points of second line:
 Enter the X co-ordinate of point C: 
-5
-Enter the Y co-ordinate of point C: 
-8
-Enter the X co-ordinate of point D: 
 1
+Enter the Y co-ordinate of point C: 
+7
+Enter the X co-ordinate of point D: 
+7
 Enter the Y co-ordinate of point D: 
-9
-Length of a Line is:3.872983346207417
-Equal Lines
+4
+Length of a Line is:5.196152422706632
+Line 1 length is greater.
 */
