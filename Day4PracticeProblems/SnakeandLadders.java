@@ -1,4 +1,4 @@
-public class UC3 {
+public class SnakeandLadders {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 int position1=0;
