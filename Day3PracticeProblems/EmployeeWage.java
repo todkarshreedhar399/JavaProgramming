@@ -15,6 +15,8 @@ public class EmployeeWage {
 	       {
 	       double attendance=Math.floor(Math.random()*10)%3;
 	       int value = (int) attendance;
+	        if(totalhours>100)
+	    	   break;
 	       switch(value)
 	       {
 	       case 1:
@@ -33,8 +35,7 @@ public class EmployeeWage {
 	    	    sumofsalary=sumofsalary+wage;
 	        	break;
 	       }
-	       if(totalhours>=100)
-	    	   break;
+	      
 	    }
 		   System.out.println("Total Hours of Month:" + totalhours);
 		   System.out.println("Total Monthly Salary (20 days) which include parttime,fulltime and absence is:" + sumofsalary);
