@@ -1,5 +1,5 @@
 
-public class UC5 {
+public class SnakeandLaddersUC5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 int position1=0;
